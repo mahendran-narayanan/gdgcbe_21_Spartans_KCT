@@ -28,40 +28,48 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="urls.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/shopbotbackend/shopbot/urls.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="113">
-              <caret line="20" column="4" lean-forward="false" selection-start-line="20" selection-start-column="4" selection-end-line="20" selection-end-column="4" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="telegrambot.py" pinned="false" current-in-tab="false">
+      <file leaf-file-name="telegrambot.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/shopbotbackend/jarvis/telegrambot.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="319">
-              <caret line="82" column="111" lean-forward="false" selection-start-line="82" selection-start-column="111" selection-end-line="82" selection-end-column="111" />
+            <state relative-caret-position="193">
+              <caret line="105" column="57" lean-forward="false" selection-start-line="105" selection-start-column="57" selection-end-line="105" selection-end-column="57" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="file_1.jpg" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/shopbotbackend/photos/file_1.jpg">
+      <file leaf-file-name="file_6.jpg" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/shopbotbackend/photos/file_6.jpg">
           <provider selected="true" editor-type-id="images">
             <state />
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="tests.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/shopbotbackend/jarvis/tests.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
+      <file leaf-file-name="file_4.jpg" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/shopbotbackend/photos/file_4.jpg">
+          <provider selected="true" editor-type-id="images">
+            <state />
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="file_3.jpg" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/shopbotbackend/photos/file_3.jpg">
+          <provider selected="true" editor-type-id="images">
+            <state />
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="file_2.jpg" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/shopbotbackend/photos/file_2.jpg">
+          <provider selected="true" editor-type-id="images">
+            <state />
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="file_1.jpg" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/shopbotbackend/photos/file_1.jpg">
+          <provider selected="true" editor-type-id="images">
+            <state />
           </provider>
         </entry>
       </file>
@@ -72,21 +80,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="requirements.txt" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/requirements.txt">
+      <file leaf-file-name="admin.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/shopbotbackend/jarvis/admin.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="79">
-              <caret line="10" column="13" lean-forward="false" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="config.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/shopbotbackend/jarvis/config.py">
+      <file leaf-file-name="apps.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/shopbotbackend/jarvis/apps.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="30">
-              <caret line="2" column="56" lean-forward="false" selection-start-line="2" selection-start-column="56" selection-end-line="2" selection-end-column="56" />
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -170,24 +178,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="shopbotbackend" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="shopbot" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="shopbot" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="shopbotbackend" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="shopbot" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -515,6 +505,12 @@
       <item index="0" class="java.lang.String" itemvalue="Django server.shopbot" />
     </list>
   </component>
+  <component name="SFStoredExecutionPersistentComponent">
+    <executions>
+      <execution name="Default" sourceToExecute="" />
+    </executions>
+    <lastSelectedExecutionName>Default</lastSelectedExecutionName>
+  </component>
   <component name="ShelveChangesManager" show_recycled="false">
     <option name="remove_strategy" value="false" />
   </component>
@@ -538,8 +534,8 @@
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3287037" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3287037" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Execute Anonymous" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.5478395" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Execute Anonymous" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3287037" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.5478395" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24980362" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Docker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
@@ -667,11 +663,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/shopbotbackend/photos/file_0.jpg">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/shopbotbackend/jarvis/config.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="30">
@@ -712,17 +703,58 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/shopbotbackend/jarvis/telegrambot.py">
+    <entry file="file://$PROJECT_DIR$/shopbotbackend/jarvis/admin.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="319">
-          <caret line="82" column="111" lean-forward="false" selection-start-line="82" selection-start-column="111" selection-end-line="82" selection-end-column="111" />
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/shopbotbackend/jarvis/apps.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/shopbotbackend/photos/file_2.jpg">
+      <provider selected="true" editor-type-id="images">
+        <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/shopbotbackend/photos/file_1.jpg">
       <provider selected="true" editor-type-id="images">
         <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/shopbotbackend/photos/file_0.jpg">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/shopbotbackend/photos/file_6.jpg">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/shopbotbackend/photos/file_4.jpg">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/shopbotbackend/photos/file_3.jpg">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/shopbotbackend/jarvis/telegrambot.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="193">
+          <caret line="105" column="57" lean-forward="false" selection-start-line="105" selection-start-column="57" selection-end-line="105" selection-end-column="57" />
+          <folding />
+        </state>
       </provider>
     </entry>
   </component>

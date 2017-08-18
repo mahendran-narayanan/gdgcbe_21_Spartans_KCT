@@ -72,15 +72,46 @@ def initiation_script():
 
 
 
+    clatitude = 0
+    clongitude = 0
+
+    class ProductResponse(object):
+        def __init__(self,photo,lat,long):
+            self.photo=photo
+            self.lat=lat
+            self.long=long
+
+        def __cmp__(self,other):
+            dist1 = (clatitude-self.lat)**2+(clongitude-self.long)**2
+            dist2 = (clatitude-other.lat)**2+(clongitude-other.long)**2
+            if dist1>dist2:
+                return 1
+            elif dist1<dist2:
+                return -1
+            else:
+                return 0
+
+    productlist = list()
 
     def customer_bot_handle(msg):
+        global productlist
         content_type, chat_type, chat_id = telepot.glance(msg)
         if content_type == 'text':
             keywords = KeyWord.objects.filter(name__icontains=msg['text'])
             products=Product.objects.filter(keywords__in=keywords)
             for product in products:
-                customer_bot.sendPhoto(chat_id,open(product.image.name,'rb') )
-                customer_bot.sendLocation(chat_id,product.shop.loction_latitude,product.shop.loction_longitude)
+                productlist.append(ProductResponse(open(product.image.name,'rb'),product.shop.loction_latitude,product.shop.loction_longitude))
+                # customer_bot.sendPhoto(chat_id,open(product.image.name,'rb') )
+                # customer_bot.sendLocation(chat_id,product.shop.loction_latitude,product.shop.loction_longitude)
+        if content_type == 'location' and len(productlist)!=0:
+            global clongitude,clatitude
+            clatitude=msg['location']['latitude']
+            clongitude=msg['location']['longitude']
+            productlist=sorted(productlist)
+            for product in productlist:
+                customer_bot.sendPhoto(chat_id,product.photo)
+                customer_bot.sendLocation(chat_id,product.lat,product.long)
+
 
 
 
