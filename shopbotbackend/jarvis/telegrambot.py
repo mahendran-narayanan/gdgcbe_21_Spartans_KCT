@@ -10,12 +10,12 @@ def initiation_script():
 
 
     def shopowner_bot_handle(msg):
-        print('sabari')
+        print('ShopOwner_handle started')
         content_type, chat_type, chat_id = telepot.glance(msg)
         if content_type == 'text':
             if msg['text']=='/start':
                 try:
-                    shopowner_bot.sendMessage(chat_id, "nice",reply_markup=ReplyKeyboardMarkup(
+                    shopowner_bot.sendMessage(chat_id, "Welcome!.Please share your location",reply_markup=ReplyKeyboardMarkup(
                                 keyboard=[
                                     [KeyboardButton(text="Share Location",request_location=True)]
                                 ]))
@@ -119,9 +119,3 @@ def initiation_script():
     customer_bot = telepot.Bot(CUSTOMER_BOT_API_TOKEN)
     MessageLoop(shopowner_bot, shopowner_bot_handle).run_as_thread()
     MessageLoop(customer_bot, customer_bot_handle).run_as_thread()
-
-
-
-
-
-
