@@ -1,0 +1,1 @@
+from .telegrambot import initiation_script
