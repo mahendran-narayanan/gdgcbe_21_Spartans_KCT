@@ -15,7 +15,10 @@ Including another URLconf
 """
 from django.conf.urls import url
 from django.contrib import admin
+from jarvis.telegrambot import initiation_script
 
+print('sabar--------------------------------------\n\n\n')
+initiation_script()
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
 ]
