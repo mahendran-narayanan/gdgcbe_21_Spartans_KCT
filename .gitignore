@@ -1,5 +1,6 @@
 #custom_ignores
 shopbotbackend/jarvis/config.py
+.idea
 
 led / optimized / DLL files
 __pycache__/
