@@ -2,12 +2,15 @@ def initiation_script():
     import telepot
     from telepot.loop import MessageLoop
     from telepot.namedtuple import ReplyKeyboardMarkup, KeyboardButton
-    from .config import SHOP_OWNER_BOT_API_TOKEN,CUSTOMER_BOT_API_TOKEN
-    from .models import User,Shop
+    from .config import SHOP_OWNER_BOT_API_TOKEN,CUSTOMER_BOT_API_TOKEN,BLUEMIX_API
+    from .models import User,Shop,KeyWord,Product
     import pprint
+    from django.core.files import File
+    # Open an existing file using Python's built-in open()
 
 
     def shopowner_bot_handle(msg):
+        print('sabari')
         content_type, chat_type, chat_id = telepot.glance(msg)
         if content_type == 'text':
             if msg['text']=='/start':
@@ -36,9 +39,34 @@ def initiation_script():
             Shop.objects.filter(id=msg['from']['id']).update(loction_latitude=msg['location']['latitude'],loction_longitude=msg['location']['longitude'])
 
         if content_type == 'photo':
-            print(msg)
+            import requests
+            import json
+            import shutil
+            shop=Shop.objects.get(id=msg['from']['id'])
+            response = requests.get('https://api.telegram.org/bot'+SHOP_OWNER_BOT_API_TOKEN+'/getFile?file_id='+msg['photo'][len(msg['photo'])-1]['file_id'])
+            ans = response.content.decode('utf8').replace("'", '"')
+            data = json.loads(ans)
+            response = requests.get('https://api.telegram.org/file/bot'+SHOP_OWNER_BOT_API_TOKEN+"/"+data['result']['file_path'],stream=True)
+            if response.status_code == 200:
+                with open(data['result']['file_path'], 'wb') as f:
+                    response.raw.decode_content = True
+                    shutil.copyfileobj(response.raw, f)
+                    product = Product.objects.create(image=File(open(data['result']['file_path'], 'rb')),shop=shop)
 
+                    url = 'https://gateway-a.watsonplatform.net/visual-recognition/api/v3/classify?api_key='+BLUEMIX_API+'&version=2016-05-20'
 
+                    import mimetypes
+                    with open(data['result']['file_path'], 'rb') as image:
+                        filename = image.name
+                        mime_type = mimetypes.guess_type(
+                            filename)[0] or 'application/octet-stream'
+                        files = {'images_file': (filename, image, mime_type)}
+                        r = requests.request(method="POST", url=url, files=files)
+                        ans = r.content.decode('utf8').replace("'", '"')
+                        data = json.loads(ans)
+                        for nclass in data['images'][0]['classifiers'][0]["classes"]:
+                            kw=KeyWord.objects.get_or_create(name=nclass['class'])
+                            product.keywords.add(kw[0])
 
 
 
@@ -48,7 +76,12 @@ def initiation_script():
     def customer_bot_handle(msg):
         content_type, chat_type, chat_id = telepot.glance(msg)
         if content_type == 'text':
-            customer_bot.sendMessage(chat_id, msg['text'])
+            keywords = KeyWord.objects.filter(name__icontains=msg['text'])
+            products=Product.objects.filter(keywords__in=keywords)
+            for product in products:
+                customer_bot.sendPhoto(chat_id,open(product.image.name,'rb') )
+                customer_bot.sendLocation(chat_id,product.shop.loction_latitude,product.shop.loction_longitude)
+
 
 
     shopowner_bot = telepot.Bot(SHOP_OWNER_BOT_API_TOKEN)
