@@ -3,9 +3,9 @@
 **Project Duration** : 14hrs(approx)
 
 #### Team Members  
-    1.[Sabari rangan](https://www.github.com/sabarirangan)
-    2.[AjithKumar](https://www.github.com/ajithkumarsekar)
-    3.[Mahendran](https://github.com/mahendran-narayanan)
+1. [Sabari rangan](https://www.github.com/sabarirangan)
+2. [AjithKumar](https://www.github.com/ajithkumarsekar)
+3. [Mahendran](https://github.com/mahendran-narayanan)
 
 ### Idea and Problem statement  
 	The main idea of the project is to solve the two problems which prevails in the normal world for the shop keepers and the customers. While entering in the normal departmental store, the people who are in need of some items will search for items or start visiting the rows where the pamphlet points to or ask the workers, the location of the item. Yeah!. Now you can identify the problem.Right!!!.People then grab that and it don't stop here. The same process may be continued untill he/she bought all the required items. If the shop is well known for a people, no problem. But that too, if the location of the items are changed, there the problem arises.
