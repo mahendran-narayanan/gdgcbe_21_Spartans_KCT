@@ -1,6 +1,6 @@
 amqp==2.2.1
 celery==4.0.2
-cookiecutter==1.5.1
+cookiecutter==2.1.1
 Django==1.11.3
 redis==2.10.5
 telepot==12.2
